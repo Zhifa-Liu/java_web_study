@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+<form action="ParamOutServlet" method="Post">
+    用户名：
+    <label>
+        <input type="text" name="username"/>
+    </label>
+    <br/>
+    密码：
+    <label>
+        <input type="password" name="psw"/>
+    </label>
+    <br/>
+    性别：
+    <label>
+        <input type="radio" name="gender" value="男"/>男
+    </label>
+    <label>
+        <input type="radio" name="gender" value="女"/>女
+    </label>
+    <br/>
+    爱好：
+    <label>
+        <input type="checkbox" name="hobbit" value="Basketball"/>篮球
+    </label>
+    <label>
+        <input type="checkbox" name="hobbit" value="Volleyball"/>排球
+    </label>
+    <label>
+        <input type="checkbox" name="hobbit" value="Baseball"/>棒球
+    </label>
+    <input type="submit" value="提交"/>
+
+</form>
+
+<br/>
+<a href="ParamOutServlet?username=root&psw=root&gender=男">A</a>
+
+</body>
+</html>

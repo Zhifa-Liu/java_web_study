@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="3.0">
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>ctrl.SignInServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/SignInServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>ctrl.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUpServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ParamOutTest-->
+    <servlet>
+        <servlet-name>ParamOutServlet</servlet-name>
+        <servlet-class>test.paramouttest.ParamOutServlet</servlet-class>
+        <init-param>
+            <param-name>param</param-name>
+            <param-value>Only servlet contain this param</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ParamOutServlet</servlet-name>
+        <url-pattern>/ParamOutServlet</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>parameter</param-name>
+        <param-value>All of servlet</param-value>
+    </context-param>
+
+    <!-- CookieTest-->
+    <servlet>
+        <servlet-name>SetCookieServlet</servlet-name>
+        <servlet-class>test.cookietest.SetCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookieServlet</servlet-name>
+        <url-pattern>/SetCookieServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <servlet-class>test.cookietest.GetCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <url-pattern>/GetCookieServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- SessionTest-->
+    <servlet>
+        <servlet-name>SetSessionServlet</servlet-name>
+        <servlet-class>test.sessiontest.SetSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetSessionServlet</servlet-name>
+        <url-pattern>/SetSessionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetSessionServlet</servlet-name>
+        <servlet-class>test.sessiontest.GetSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSessionServlet</servlet-name>
+        <url-pattern>/GetSessionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignOutServlet</servlet-name>
+        <servlet-class>ctrl.SignOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignOutServlet</servlet-name>
+        <url-pattern>/SignOutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListUsers</servlet-name>
+        <servlet-class>ctrl.ListUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListUsers</servlet-name>
+        <url-pattern>/ListUsers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>ctrl.AddUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUser</servlet-name>
+        <url-pattern>/AddUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PreUpdateUser</servlet-name>
+        <servlet-class>ctrl.PreUpdateUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PreUpdateUser</servlet-name>
+        <url-pattern>/PreUpdateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateUser</servlet-name>
+        <servlet-class>ctrl.UpdateUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUser</servlet-name>
+        <url-pattern>/UpdateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteUser</servlet-name>
+        <servlet-class>ctrl.DeleteUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LookupUser</servlet-name>
+        <servlet-class>ctrl.LookupUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LookupUser</servlet-name>
+        <url-pattern>/LookupUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UsersPage</servlet-name>
+        <servlet-class>ctrl.UsersPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsersPage</servlet-name>
+        <url-pattern>/UsersPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListHouses</servlet-name>
+        <servlet-class>ctrl.ListHouses</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListHouses</servlet-name>
+        <url-pattern>/ListHouses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PreAddHouse</servlet-name>
+        <servlet-class>ctrl.PreAddHouse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PreAddHouse</servlet-name>
+        <url-pattern>/PreAddHouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddHouse</servlet-name>
+        <servlet-class>ctrl.AddHouse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddHouse</servlet-name>
+        <url-pattern>/AddHouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PreUpdateHouse</servlet-name>
+        <servlet-class>ctrl.PreUpdateHouse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PreUpdateHouse</servlet-name>
+        <url-pattern>/PreUpdateHouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateHouse</servlet-name>
+        <servlet-class>ctrl.UpdateHouse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateHouse</servlet-name>
+        <url-pattern>/UpdateHouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteHouse</servlet-name>
+        <servlet-class>ctrl.DeleteHouse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteHouse</servlet-name>
+        <url-pattern>/DeleteHouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LookupHouse</servlet-name>
+        <servlet-class>ctrl.LookupHouse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LookupHouse</servlet-name>
+        <url-pattern>/LookupHouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HousesPage</servlet-name>
+        <servlet-class>ctrl.HousesPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HousesPage</servlet-name>
+        <url-pattern>/HousesPage</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>EncodeFilter</filter-name>
+        <filter-class>filter.EncodeFilter</filter-class>
+        <init-param>
+            <param-name>encode</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodeFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SignInFilter</filter-name>
+        <filter-class>filter.SignInFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SignInFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Filter_1</filter-name>
+        <filter-class>test.filtertest.Filter_1</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter_1</filter-name>
+        <url-pattern>/filter/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Filter_2</filter-name>
+        <filter-class>test.filtertest.Filter_2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter_2</filter-name>
+        <url-pattern>/filter/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
